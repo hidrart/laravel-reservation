@@ -17,13 +17,18 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('profile.edit') }}">
-                    <i class="ni ni-circle-08 text-blue"></i> {{ __('User profile') }}
+                <a class="nav-link" href="{{ route('cafes.index') }}">
+                    <i class="ni ni-shop text-orange"></i> {{ __('Cafe') }}
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('tables.index') }}">
                     <i class="ni ni-bag-17 text-orange"></i> {{ __('Table') }}
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('profile.edit') }}">
+                    <i class="ni ni-circle-08 text-blue"></i> {{ __('User profile') }}
                 </a>
             </li>
           </ul>
