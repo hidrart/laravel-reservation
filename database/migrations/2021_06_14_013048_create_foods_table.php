@@ -20,6 +20,7 @@ class CreateFoodsTable extends Migration
             $table->integer('foodPrice');
             $table->text('foodDescription');
             $table->string('foodPicture'); 
+            $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
         });
     }
 

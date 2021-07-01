@@ -26,6 +26,11 @@
                     <i class="ni ni-bag-17 text-orange"></i> {{ __('Table') }}
                 </a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ route('menu.index') }}">
+                  <i class="ni ni-basket text-primary"></i> {{ __('Menu') }}
+              </a>
+          </li>
           </ul>
       </div>
     </div>
