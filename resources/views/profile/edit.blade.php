@@ -2,7 +2,7 @@
 
 @section('content')
     @include('users.partials.header', [
-        'title' => __('Hello') . ' '. auth()->user()->name,
+        'title' => __('Hello,') . ' '. auth()->user()->name,
         'description' => __('This is your profile page. You can see the progress you\'ve made with your work and manage your projects or assigned tasks'),
         'class' => 'col-lg-7'
     ])   
@@ -47,20 +47,12 @@
                         </div>
                         <div class="text-center">
                             <h3>
-                                {{ auth()->user()->name }}<span class="font-weight-light">, 27</span>
+                                {{ auth()->user()->name }}<span class="font-weight-light"></span>
                             </h3>
                             <div class="h5 font-weight-300">
-                                <i class="ni location_pin mr-2"></i>{{ __('Bucharest, Romania') }}
-                            </div>
-                            <div class="h5 mt-4">
-                                <i class="ni business_briefcase-24 mr-2"></i>{{ __('Solution Manager - Creative Tim Officer') }}
-                            </div>
-                            <div>
-                                <i class="ni education_hat mr-2"></i>{{ __('University of Computer Science') }}
+                                <i class="ni location_pin mr-2"></i>{{ __('Surabaya, Indonesia') }}
                             </div>
                             <hr class="my-4" />
-                            <p>{{ __('Ryan — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music.') }}</p>
-                            <a href="#">{{ __('Show more') }}</a>
                         </div>
                     </div>
                 </div>
@@ -110,7 +102,17 @@
                                         </span>
                                     @endif
                                 </div>
-
+                                <div class="form-group{{ $errors->has('handphone') ? ' has-danger' : '' }}">
+                                    <label class="form-control-label" for="input-handphone">{{ __('Handphone Number') }}</label>
+                                    <input type="handphone" name="handphone" id="input-handphone" class="form-control form-control-alternative{{ $errors->has('handphone') ? ' is-invalid' : '' }}" placeholder="{{ __('Handphone') }}" value="{{ old('handphone', auth()->user()->handphone) }}" required>
+                                   
+                                    @if ($errors->has('handphone'))
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $errors->first('handphone') }}</strong>
+                                        </span>
+                                    @endif
+                                    
+                                </div>
                                 <div class="text-center">
                                     <button type="submit" class="btn btn-success mt-4">{{ __('Save') }}</button>
                                 </div>

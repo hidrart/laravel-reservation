@@ -24,4 +24,6 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'App\Http\Controllers\ProfileController@password']);
 	Route::get('tables', ['as' => 'tables.index', 'uses' => 'App\Http\Controllers\tableController@index']);
 	Route::get('menus', ['as' => 'menu.index', 'uses' => 'App\Http\Controllers\menuController@index']);
+	Route::get('cafes', ['as' => 'cafes.index', 'uses' => 'App\Http\Controllers\CafeController@index']);
+	Route::get('excelso', ['as' => 'excelso.index', 'uses' => 'App\Http\Controllers\ExcelsoController@index']);
 });
