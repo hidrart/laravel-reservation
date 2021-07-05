@@ -25,6 +25,7 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('tables', ['as' => 'tables.index', 'uses' => 'App\Http\Controllers\TableController@index']);
 	Route::get('menus', ['as' => 'menu.index', 'uses' => 'App\Http\Controllers\menuController@index']);
 	Route::get('cafes', ['as' => 'cafes.index', 'uses' => 'App\Http\Controllers\CafeController@index']);
-	Route::get('form', ['as' => 'form.index', 'uses' => 'App\Http\Controllers\FormController@index']);
+	Route::get('excelso', ['as' => 'excelso.index', 'uses' => 'App\Http\Controllers\ExcelsoController@index']);
+	Route::resource('/form', 'FormController');
 });
 
