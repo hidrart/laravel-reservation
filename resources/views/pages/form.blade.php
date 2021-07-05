@@ -24,6 +24,13 @@
                     <label class="form-control-label" for="exampleFormControlInput1">Nomor Telpon</label>
                     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Isi Nomor Telepon Anda">
                   </div>
+                  <div class="form-group">
+                    <label for="example-datetime-local-input" class="form-control-label">Datetime</label>
+                    <div>
+                      <input class="form-control" type="datetime-local" value="2018-11-23T10:30:00" id="example-datetime-local-input">
+                    </div>
+                  </div>
+                  <form>
                   <div class="card-body">
                   <div class="form-group">
                     <label class="form-control-label" for="exampleFormControlSelect1">Pilihan Meja</label>
