@@ -27,3 +27,8 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('cafes', ['as' => 'cafes.index', 'uses' => 'App\Http\Controllers\CafeController@index']);
 	Route::get('excelso', ['as' => 'excelso.index', 'uses' => 'App\Http\Controllers\ExcelsoController@index']);
 });
+
+
+Route::get('/coba', function () {
+     return view('pages.coba');
+});
