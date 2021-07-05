@@ -31,7 +31,12 @@
                             <i class="ni ni-basket text-primary"></i> {{ __('Menu') }}
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('form.index') }}">
+                            <i class="ni ni-basket text-primary"></i> {{ __('Form Pemesanan') }}
+                        </a>
                     </li>
+                    <li>
                     <a class="nav-link" href="{{ route('profile.edit') }}">
                         <i class="ni ni-circle-08 text-blue"></i> {{ __('User profile') }}
                     </a>
