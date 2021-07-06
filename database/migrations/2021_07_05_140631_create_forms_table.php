@@ -17,6 +17,8 @@ class CreateFormsTable extends Migration
             $table->increments('idforms');
             $table->string('nama');
             $table->string('nohp');
+            $table->string('cafe');
+            $table->dateTime('waktu');
             $table->string('meja');
             $table->string('menu');
             $table->text('tambahan'); 

@@ -14,7 +14,8 @@ class FormController extends Controller
     public function index()
     {
         //
-        return view('pages.form');
+        $form = \App\Models\form::all();
+        return view('pages.form', ['form' => $form]);
     }
 
     /**
@@ -37,9 +38,10 @@ class FormController extends Controller
     public function store(Request $request)
     {
         //
-        \App\Model\Form::create([
+        \App\Models\form::create([
           'nama' => $request->get('nama'),
           'nohp' => $request->get('nohp'),
+          'cafe' => $request->get('cafe'),
           'waktu' => $request->get('waktu'),
           'meja' => $request->get('menu'),
           'menu' => $request->get('menu'),
@@ -47,7 +49,7 @@ class FormController extends Controller
         
         ]);
 
-        return redirect('/products');
+        return redirect('/');
     }
 
     /**

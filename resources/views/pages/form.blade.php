@@ -14,15 +14,24 @@
               </div>
               <!-- Card body -->
               <div class="card-body">
-                <form>
+                <form class= " "method="POST" action="{{ config('http://localhost')}}/form">
+                @csrf
                   <div class="form-group">
                     <label class="form-control-label" for="exampleFormControlInput1">Nama</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Isi Nama Anda" name="nama">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Isi Nama Anda" name="nama">
                   </div>
                 <form>
                   <div class="form-group">
                     <label class="form-control-label" for="exampleFormControlInput1">Nomor Telepon</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Isi Nomor Telepon Anda" name="nohp">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Isi Nomor Telepon Anda" name="nohp">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-control-label" for="exampleFormControlSelect1">Pilihan Cafe</label>
+                    <select class="form-control" id="exampleFormControlSelect1" name="cafe">
+                      <option>Excelso</option>
+                      <option></option>
+                      <option></option>
+                    </select>
                   </div>
                   <div class="form-group">
                     <label for="example-datetime-local-input" class="form-control-label">Datetime</label>
@@ -31,7 +40,6 @@
                     </div>
                   </div>
                   <form>
-                  <div class="card-body">
                   <div class="form-group">
                     <label class="form-control-label" for="exampleFormControlSelect1">Pilihan Meja</label>
                     <select class="form-control" id="exampleFormControlSelect1" name="meja">
@@ -55,6 +63,8 @@
                     <label class="form-control-label" for="exampleFormControlTextarea1">Keterangan Tambahan</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="tambahan"></textarea>
                   </div>
+                  </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
               </div>
             </div>
