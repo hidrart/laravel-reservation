@@ -25,6 +25,7 @@ class FormController extends Controller
     public function create()
     {
         //
+        return view('pages.form');
     }
 
     /**
@@ -36,6 +37,17 @@ class FormController extends Controller
     public function store(Request $request)
     {
         //
+        \App\Model\Form::create([
+          'nama' => $request->get('nama'),
+          'nohp' => $request->get('nohp'),
+          'waktu' => $request->get('waktu'),
+          'meja' => $request->get('menu'),
+          'menu' => $request->get('menu'),
+          'tambahan' => $request->get('tambahan')
+        
+        ]);
+
+        return redirect('/products');
     }
 
     /**

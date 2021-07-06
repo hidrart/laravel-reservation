@@ -17,24 +17,24 @@
                 <form>
                   <div class="form-group">
                     <label class="form-control-label" for="exampleFormControlInput1">Nama</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Isi Nama Anda">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Isi Nama Anda" name="nama">
                   </div>
                 <form>
                   <div class="form-group">
-                    <label class="form-control-label" for="exampleFormControlInput1">Nomor Telpon</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Isi Nomor Telepon Anda">
+                    <label class="form-control-label" for="exampleFormControlInput1">Nomor Telepon</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Isi Nomor Telepon Anda" name="nohp">
                   </div>
                   <div class="form-group">
                     <label for="example-datetime-local-input" class="form-control-label">Datetime</label>
                     <div>
-                      <input class="form-control" type="datetime-local" value="2018-11-23T10:30:00" id="example-datetime-local-input">
+                      <input class="form-control" type="datetime-local" value="2018-11-23T10:30:00" id="example-datetime-local-input" name="waktu">
                     </div>
                   </div>
                   <form>
                   <div class="card-body">
                   <div class="form-group">
                     <label class="form-control-label" for="exampleFormControlSelect1">Pilihan Meja</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
+                    <select class="form-control" id="exampleFormControlSelect1" name="meja">
                       <option>Meja 1</option>
                       <option>Meja 2</option>
                       <option>Meja 3</option>
@@ -43,7 +43,7 @@
                   </div>
                   <div class="form-group">
                     <label class="form-control-label" for="exampleFormControlSelect2">Pilihan Menu</label>
-                    <select multiple class="form-control" id="exampleFormControlSelect2">
+                    <select multiple class="form-control" id="exampleFormControlSelect2" name="menu">
                       <option>1</option>
                       <option>2</option>
                       <option>3</option>
@@ -53,7 +53,7 @@
                   </div>
                   <div class="form-group">
                     <label class="form-control-label" for="exampleFormControlTextarea1">Keterangan Tambahan</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="tambahan"></textarea>
                   </div>
                 </form>
               </div>

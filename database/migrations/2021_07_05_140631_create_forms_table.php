@@ -20,6 +20,8 @@ class CreateFormsTable extends Migration
             $table->string('meja');
             $table->string('menu');
             $table->text('tambahan'); 
+            $table->dateTime('created_at'); 
+            $table->dateTime('updated_at'); 
         });
     }
 
