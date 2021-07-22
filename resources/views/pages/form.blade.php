@@ -25,13 +25,18 @@
                     <label class="form-control-label" for="exampleFormControlInput1">Nomor Telepon</label>
                     <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Isi Nomor Telepon Anda" name="nohp">
                   </div>
-                  <div class="form-group">
-                    <label class="form-control-label" for="exampleFormControlSelect1">Pilihan Cafe</label>
-                    <select class="form-control" id="exampleFormControlSelect1" name="cafe">
-                      <option>Excelso</option>
-                      <option></option>
-                      <option></option>
-                    </select>
+                  <div class="form-check">
+                  <label class="form-control-label">Pilihan Cafe</label><br>
+                  <input class="form-check-input" type="radio" name="cafe" id="exampleRadios1" value="excelso" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                  Excelso
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="radio" name="cafe" id="exampleRadios2" value="starbucks">
+                  <label class="form-check-label" for="exampleRadios2">
+                  Starbucks
+                  </label>
                   </div>
                   <div class="form-group">
                     <label for="example-datetime-local-input" class="form-control-label">Datetime</label>
@@ -39,10 +44,9 @@
                       <input class="form-control" type="datetime-local" value="2018-11-23T10:30:00" id="example-datetime-local-input" name="waktu">
                     </div>
                   </div>
-                  <form>
                   <div class="form-group">
-                    <label class="form-control-label" for="exampleFormControlSelect1">Pilihan Meja</label>
-                    <select class="form-control" id="exampleFormControlSelect1" name="meja">
+                    <label class="form-control-label" for="exampleFormControlSelect2">Pilihan Meja</label>
+                    <select class="form-control" id="exampleFormControlSelect2" name="meja">
                       <option>Meja 1</option>
                       <option>Meja 2</option>
                       <option>Meja 3</option>
@@ -50,8 +54,8 @@
                     </select>
                   </div>
                   <div class="form-group">
-                    <label class="form-control-label" for="exampleFormControlSelect2">Pilihan Menu</label>
-                    <select multiple class="form-control" id="exampleFormControlSelect2" name="menu">
+                    <label class="form-control-label" for="exampleFormControlSelect3">Pilihan Menu</label>
+                    <select multiple class="form-control" id="exampleFormControlSelect3" name="menu">
                       <option>1</option>
                       <option>2</option>
                       <option>3</option>

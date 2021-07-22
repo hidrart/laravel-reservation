@@ -43,7 +43,7 @@ class FormController extends Controller
           'nohp' => $request->get('nohp'),
           'cafe' => $request->get('cafe'),
           'waktu' => $request->get('waktu'),
-          'meja' => $request->get('menu'),
+          'meja' => $request->get('meja'),
           'menu' => $request->get('menu'),
           'tambahan' => $request->get('tambahan')
         

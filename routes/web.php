@@ -26,6 +26,7 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('menus', ['as' => 'menu.index', 'uses' => 'menuController@index']);
 	Route::get('cafes', ['as' => 'cafes.index', 'uses' => 'CafeController@index']);
 	Route::get('excelso', ['as' => 'excelso.index', 'uses' => 'ExcelsoController@index']);
+	Route::get('starbucks', ['as' => 'starbucks.index', 'uses' => 'StarbucksController@index']);
 	Route::resource('/form', 'FormController');
 });
 
