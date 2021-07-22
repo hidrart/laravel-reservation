@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class TableController extends Controller
+class FormController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,8 @@ class TableController extends Controller
     public function index()
     {
         //
-        return view ('pages.tables');
+        $form = \App\Models\form::all();
+        return view('pages.form', ['form' => $form]);
     }
 
     /**
@@ -25,6 +26,7 @@ class TableController extends Controller
     public function create()
     {
         //
+        return view('pages.form');
     }
 
     /**
@@ -36,6 +38,18 @@ class TableController extends Controller
     public function store(Request $request)
     {
         //
+        \App\Models\form::create([
+          'nama' => $request->get('nama'),
+          'nohp' => $request->get('nohp'),
+          'cafe' => $request->get('cafe'),
+          'waktu' => $request->get('waktu'),
+          'meja' => $request->get('menu'),
+          'menu' => $request->get('menu'),
+          'tambahan' => $request->get('tambahan')
+        
+        ]);
+
+        return redirect('/');
     }
 
     /**

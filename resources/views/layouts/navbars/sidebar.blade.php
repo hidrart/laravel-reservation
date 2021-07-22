@@ -2,8 +2,8 @@
     <div class="scrollbar-inner">
         <!-- Brand -->
         <div class="sidenav-header  align-items-center">
-            <a class="navbar-brand" href="javascript:void(0)">
-                <img src="../assets/img/brand/blue.png" class="navbar-brand-img" alt="...">
+            <a class="navbar-brand" href="{{ route('home') }}">
+                <img src="../assets/img/brand/blue.png" class="navbar-brand-img" alt="..."> 
             </a>
         </div>
         <div class="navbar-inner">
@@ -31,7 +31,12 @@
                             <i class="ni ni-basket text-primary"></i> {{ __('Menu') }}
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('form.index') }}">
+                            <i class="ni ni-basket text-primary"></i> {{ __('Form Pemesanan') }}
+                        </a>
                     </li>
+                    <li>
                     <a class="nav-link" href="{{ route('profile.edit') }}">
                         <i class="ni ni-circle-08 text-blue"></i> {{ __('User profile') }}
                     </a>
